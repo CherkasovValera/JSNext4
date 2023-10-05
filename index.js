@@ -33,9 +33,8 @@ formElem.addEventListener("submit", (e) => {
 formElem.addEventListener("input", (e) => {
   if (!e.target.classList.contains("form-control")) 
   {
-    return;
-  }
-  
+    
+  }  
   e.target.value === ""
     ? e.target.classList.add("error")
     : e.target.classList.remove("error");
